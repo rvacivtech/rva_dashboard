@@ -1,3 +1,10 @@
+@import url("richmond-sunlight.css");
+@import url("weather-api.css");
+
+
+ul{
+	list-style-type:none;
+}
 main{
 	display:grid;
 	grid-template-columns:repeat(3, 33%);

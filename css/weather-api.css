@@ -1,0 +1,17 @@
+#weather-forecast{
+	display:grid;
+	grid-template-columns:repeat(7, 14.28%);
+}
+#weather-forecast li{
+	outline:1px solid #000;
+	padding:.3em .45em;
+
+}
+.weather-b{
+	display:block;
+	font-size:.85em;
+}
+.weather-b + .weather-b{
+	font-weight:300;
+	font-size:smaller;
+}

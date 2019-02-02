@@ -28,10 +28,12 @@ function weatherAPIInit(){
 
 
     htmlObjs.push("<section class=\"rva-api-section\">");
+    htmlObjs.push("<ul id=\"weather-forecast\" class=\"xoxo\">");
     for(var z = 0; z < data.properties.periods.length; z++){
       //console.log(data.properties.periods[z].name+ ": " +data.properties.periods[z].shortForecast);
-      htmlObjs.push("<h2>" +data.properties.periods[z].name+ ": " +data.properties.periods[z].shortForecast+ "</h2>");
+      htmlObjs.push("<li><b class=\"weather-b\">" +data.properties.periods[z].name+ "</b> <b class=\"weather-b\">" +data.properties.periods[z].shortForecast+ "</b></li>");
     }
+    htmlObjs.push("</ul>");
     htmlObjs.push("</section>");
     htmlList += htmlObjs.join('');
     htmlOutput.innerHTML = htmlList;
