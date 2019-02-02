@@ -58,17 +58,3 @@ function richmondSunlightAPIInit(){
   };
 
 };
-// richmondSunlightAPIInit();
-
-
-// listen for changes to document.readyState - onreadystatechange is
-// fired when readyState value is changed
-document.onreadystatechange = function () {
-
-    // check the value - if it's 'interactive' then the DOM has loaded
-    if (document.readyState === "interactive") {
-        // add code here
-        console.log("interacive");
-        richmondSunlightAPIInit();
-    }
-}
