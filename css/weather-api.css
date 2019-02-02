@@ -5,6 +5,7 @@
 #weather-forecast li{
 	outline:1px solid #000;
 	padding:.3em .45em;
+	position:relative;
 
 }
 .weather-b{
@@ -14,4 +15,10 @@
 .weather-b + .weather-b{
 	font-weight:300;
 	font-size:smaller;
+}
+.weather-icon{
+	display:block;
+	bottom:0;
+	margin:0 auto 5px auto;
+	outline:1px solid #000;
 }

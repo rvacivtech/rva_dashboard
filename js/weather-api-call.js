@@ -7,6 +7,7 @@ function weatherAPIInit(){
     request.onload = function(){
       if (request.status >= 200 && request.status < 400) { // success!
         var data = JSON.parse(request.responseText);
+        console.log(data);
         parseJSONSingleton(data);
       } else {
     	  console.log("reached target server, but returned an error; helpful error message for sure!");
@@ -31,7 +32,7 @@ function weatherAPIInit(){
     htmlObjs.push("<ul id=\"weather-forecast\" class=\"xoxo\">");
     for(var z = 0; z < data.properties.periods.length; z++){
       //console.log(data.properties.periods[z].name+ ": " +data.properties.periods[z].shortForecast);
-      htmlObjs.push("<li><b class=\"weather-b\">" +data.properties.periods[z].name+ "</b> <b class=\"weather-b\">" +data.properties.periods[z].shortForecast+ "</b></li>");
+      htmlObjs.push("<li><img class=\"weather-icon\" src=\""  +data.properties.periods[z].icon+  "\" alt=\""  +data.properties.periods[z].shortForecast+ " Icon\" /><b class=\"weather-b\">" +data.properties.periods[z].name+ "</b> <b class=\"weather-b\">" +data.properties.periods[z].shortForecast+ "</b></li>");
     }
     htmlObjs.push("</ul>");
     htmlObjs.push("</section>");
