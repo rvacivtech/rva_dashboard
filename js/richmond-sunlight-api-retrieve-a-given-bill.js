@@ -1,5 +1,5 @@
 function richmondSunlightAPIInit(){
-  var jsonURL = 'https://api.richmondsunlight.com/1.0/bill/2019/hb277.json'; // has tags
+  var jsonURL = "https://api.richmondsunlight.com/1.0/bill/2019/hb277.json"; // has tags
 
   function getJSON(){
     var request = new XMLHttpRequest();
@@ -7,7 +7,7 @@ function richmondSunlightAPIInit(){
     request.onload = function(){
       if (request.status >= 200 && request.status < 400) { // success!
         var data = JSON.parse(request.responseText);
-        console.log(data);
+        // console.log(data);
         parseJSONSingleton(data);
       } else {
     	  console.log("reached target server, but returned an error; helpful error message for sure!");
