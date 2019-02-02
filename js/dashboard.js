@@ -12,7 +12,7 @@ function currentDateTime(){
 	// console.log(htmlTimeContent);
 
 	let htmlTime = document.getElementById("current-time");
-	htmlTime.setAttribute('datetime', 'weather-data');
+	htmlTime.setAttribute("datetime", dateToday);
 	htmlTime.innerHTML = htmlTimeContent;
 };
 
