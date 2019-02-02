@@ -1,0 +1,32 @@
+main{
+	display:grid;
+	grid-template-columns:repeat(3, 33%);
+	grid-template-rows:50% 50%;
+	grid-row-gap:4em;
+	
+}
+.dashboard-display{
+	width:90%;
+	min-height:300px;
+	max-height:600px;
+	overflow:scroll;
+	outline:1px solid #000;
+	margin-left:5%;
+	margin-right:5%;
+	position:relative;
+}
+.dashboard-display-h2{
+	background-color:#c0c0c0;
+	font-family:Georgia, serif;
+	color:#fff;
+	margin:0 0 1em 0;
+	padding:.2em .4em;
+	text-align:center;
+}
+
+
+footer{
+	padding-top:3em;
+	text-align:center;
+}
+
