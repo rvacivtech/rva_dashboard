@@ -1,13 +1,4 @@
-function fetchData(){
-  function createNode(element) {
-    return document.createElement(element);
-  }
-  function append(parent, el) {
-    return parent.appendChild(el);
-  }
-  function appendFirstChild(parent, el) {
-
-  }
+function fetchDataWeather(){
   const ul = document.getElementById('api-weather');
   const url = 'https://api.weather.gov/gridpoints/AKQ/44,76/forecast';
   fetch(url)
@@ -28,4 +19,3 @@ function fetchData(){
     console.log(JSON.stringify(error));
   });   
 };
-fetchData();
