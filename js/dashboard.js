@@ -9,22 +9,13 @@ function currentDateTime(){
 	let dateToday = newDate.today();
 	let currentTime = newDate.timeNow();
 	let htmlTimeContent = "Today's Date: " +dateToday+ " Current Time: " +currentTime;
-
 	let htmlTime = document.getElementById("current-time");
 	htmlTime.setAttribute("datetime", dateToday);
 	htmlTime.innerHTML = htmlTimeContent;
 };
-
-function createNode(element) {
-	return document.createElement(element);
-}
-
-function append(parent, el) {
-	return parent.appendChild(el);
-}
-
-function appendFirstChild(parent, el) {}
-
+function createNode(element) { return document.createElement(element); };
+function append(parent, el) { return parent.appendChild(el); };
+function appendFirstChild(parent, el) {};
 function loadDashboard() {
 	document.onreadystatechange = function () {
     	if (document.readyState === "interactive") {

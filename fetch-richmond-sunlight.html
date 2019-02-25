@@ -9,10 +9,17 @@
   <body>
     <header><h1>Dashboard <time datetime="">Date</time></h1></header>
     <main>
-      <h1>Richmond Sunlights</h1>
+      <h1>Richmond Sunlight</h1>
       <ul id="api-richmond-sunlight"></ul>
     </main>
     <footer>rva://civ</footer>
   </body>
+<script src="js/dash-utility.js"></script>
 <script src="js/fetch-richmond-sunlight-data.js"></script>
+<script>
+function fetchData(){
+  fetchDataRichmondSunlight(); 
+};
+fetchData();
+</script>
 </html>

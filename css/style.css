@@ -1,6 +1,12 @@
 @import url("richmond-sunlight.css");
 @import url("weather-api.css");
 
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	box-sizing:border-box;
+}
 
 ul{
 	list-style-type:none;
@@ -10,7 +16,14 @@ main{
 	grid-template-columns:repeat(3, 33%);
 	grid-template-rows:50% 50%;
 	grid-row-gap:4em;
+	min-height:16em;
 	
+}
+main.demo{
+	grid-template-rows:20% 80%;
+	margin-bottom:3em;
+	grid-gap:0;
+
 }
 .dashboard-display{
 	width:90%;
@@ -37,3 +50,22 @@ footer{
 	text-align:center;
 }
 
+.demo h1,
+.demo table.table-demo{grid-column: 1 / span 3;}
+table.table-demo{
+	border-collapse: collapse;
+ 	width: 100%;
+}
+.table-demo th{ color:#fff; }
+.table-demo th,
+.table-demo td{
+	padding: 0.25rem;
+	text-align: left;
+	border: 1px solid #ccc;
+}
+.table-demo thead{
+	background-color:#999;
+}
+.table-demo tbody tr:hover {
+	background-color:#ff0;
+}

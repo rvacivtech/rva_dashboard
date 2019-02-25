@@ -8,17 +8,17 @@
   </head>
   <body>
     <header><h1>Dashboard <time datetime="">Date</time></h1></header>
-    <main>
-      <h1>Weather</h1>
-      <ul id="api-weather"></ul>
+    <main class="demo">
+      <h1>Crime DB</h1>
+      <table id="api-crime-by-month-table" class="table-demo"></table>
     </main>
     <footer>rva://civ</footer>
   </body>
 <script src="js/dash-utility.js"></script>
-<script src="js/fetch-weather-data-demo.js"></script>
+<script src="js/fetch-crime-db.js"></script>
 <script>
 function fetchData(){
-  fetchDataWeather(); 
+  fetchCrimeDB(); 
 };
 fetchData();
 </script>
