@@ -12,6 +12,9 @@ function currentDateTime(){
 	let htmlTime = document.getElementById("current-time");
 	htmlTime.setAttribute("datetime", dateToday);
 	htmlTime.innerHTML = htmlTimeContent;
+
+	// if this is going to be "current", then it should be continous, aka a clock...
+	
 };
 function createNode(element) { return document.createElement(element); };
 function append(parent, el) { return parent.appendChild(el); };
@@ -22,6 +25,7 @@ function loadDashboard() {
         	fetchDataWeather();
         	fetchDataRichmondSunlight();
         	currentDateTime();
+        	fetchCrimeDB();
     	};
 	};
 };

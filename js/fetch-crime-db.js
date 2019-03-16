@@ -1,7 +1,8 @@
 function fetchCrimeDB(){
-  const ul = document.getElementById('api-crime-by-month');
+  // const ul = document.getElementById('api-crime-by-month');
   const table = document.getElementById('api-crime-by-month-table');
   const url = 'https://35.236.207.129/api/crime/count-by-month';
+  console.log("url: " +url);
   fetch(url)
   .then((resp) => resp.json())
   .then(function(data) {
